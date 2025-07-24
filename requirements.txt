@@ -1,4 +1,6 @@
 streamlit
+streamlit-autorefresh
 pyvisa
+pyvisa-py
 numpy
 matplotlib 
