@@ -180,13 +180,15 @@ if st.session_state['connected']:
     st.markdown('<div class="small-btn stop-btn">', unsafe_allow_html=True)
     if st.sidebar.button("Disconnect", use_container_width=True, key="btn_connect_toggle"):
         connect_toggle()
-        st.experimental_rerun()
+        st.rerun()
+
     st.markdown("</div>", unsafe_allow_html=True)
 else:
     st.markdown('<div class="small-btn">', unsafe_allow_html=True)
     if st.sidebar.button("Connect", use_container_width=True, key="btn_connect_toggle"):
         connect_toggle()
-        st.experimental_rerun()
+        st.rerun()
+
     st.markdown("</div>", unsafe_allow_html=True)
 
 st.sidebar.markdown("---")
